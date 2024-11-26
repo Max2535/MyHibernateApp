@@ -11,7 +11,7 @@ import java.io.IOException;
 
 @WebServlet("/user")
 public class UserServlet extends HttpServlet {
-    private UserDAO userDao = new UserDAO();
+    private final UserDAO userDao = new UserDAO();
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -20,7 +20,7 @@ public class UserServlet extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws  IOException {
         User user = new User();
         user.setUsername(request.getParameter("username"));
         user.setEmail(request.getParameter("email"));
