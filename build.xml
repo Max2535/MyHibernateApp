@@ -59,6 +59,6 @@
                 </fileset>
             </classpath>
         </java>
-        <echo message="Log file created: ${log.file}" />
+        <echo message="Log file created: ${log.file}"/>
     </target>
 </project>

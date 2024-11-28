@@ -31,7 +31,6 @@ public class UserDAO {
     }
 
 
-
     public User getUserById(int id) {
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
             return session.get(User.class, id);

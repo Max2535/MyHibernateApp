@@ -3,8 +3,6 @@ package com.example;
 import com.example.dao.UserDAO;
 import com.example.entity.User;
 
-import java.util.List;
-
 public class Main {
 
     public static void main(String[] args) {
